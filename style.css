@@ -1,6 +1,7 @@
 body {
   background-color: #292524;
   color: #fafaf9;
+  font-family: "Sono", sans-serif;
 }
 
 .fact-form {
@@ -18,7 +19,6 @@ h1 {
 .fact {
   font-size: 20px;
   line-height: 1.4;
-  font-family: "Sono", sans-serif;
   background-color: #44403c;
 }
 
