@@ -8,12 +8,17 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 40px;
+  padding: 48px 64px;
 }
 
-/* LAYOUT */
+/* MAIN LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
-  margin: 40px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -31,6 +36,11 @@ body {
   display: flex;
   align-item: center;
   gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
 }
 
 .fact-form {
