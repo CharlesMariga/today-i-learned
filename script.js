@@ -58,10 +58,8 @@ async function loadFacts() {
     "https://gajnzssamsfzbdnbopoz.supabase.co/rest/v1/facts",
     {
       headers: {
-        apikey:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdham56c3NhbXNmemJkbmJvcG96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODcxMjUxMzAsImV4cCI6MjAwMjcwMTEzMH0.MTlQobRHROu-FLoVhO_gv4WjYcrBk_np4el2P23HssI",
-        authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdham56c3NhbXNmemJkbmJvcG96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODcxMjUxMzAsImV4cCI6MjAwMjcwMTEzMH0.MTlQobRHROu-FLoVhO_gv4WjYcrBk_np4el2P23HssI",
+        apikey: "",
+        authorization: "Bearer ",
       },
     }
   );
