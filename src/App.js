@@ -21,9 +21,10 @@ function App() {
   useEffect(() => {
     async function getFacts() {
       setIsLoading(true);
-      const { data: facts } = await supabase
+      const { data: facts, error } = await supabase
         .from("facts")
         .select()
+        .eq("category", "technology")
         .order("votesInteresting", { ascending: false })
         .limit(1000);
 
