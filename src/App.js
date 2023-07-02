@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./style.css";
 
 const CATEGORIES = [
@@ -46,6 +47,8 @@ const initialFacts = [
 ];
 
 function App() {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <>
       {/* HEADER */}
@@ -59,9 +62,15 @@ function App() {
           />
           <h1>Today I learned</h1>
         </div>
-        <button className="btn btn-large btn-open">Share a fact</button>
+        <button
+          className="btn btn-large btn-open"
+          onClick={() => setShowForm((val) => !val)}
+        >
+          Share a fact
+        </button>
       </header>
-      <NewFactForm />
+
+      {showForm ? <NewFactForm /> : null}
 
       <main className="main">
         <CategoryFilter />
