@@ -23,10 +23,17 @@ body {
   margin-top: 24px;
 }
 
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
 /* MAIN LAYOUT */
 #root {
   max-width: 1500px;
   margin: 0 auto;
+  height: calc(100vh - 48px - 68px - 40px);
 }
 
 .header {
@@ -41,12 +48,18 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+  height: 80vh;
 }
 
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
   }
+}
+
+section {
+  overflow-y: scroll;
+  padding-bottom: 40px;
 }
 
 /* ELEMENTS */
@@ -223,7 +236,7 @@ ul {
 
 @media (max-width: 1000px) {
   body {
-    padding: 32px 48px;
+    /* padding: 32px 48px; */
   }
 
   .fact-form {
@@ -237,4 +250,36 @@ ul {
   }
 }
 
-/* password: uSedNIAr6HLwZ3vS */
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0px;
+  }
+
+  body {
+    padding: 12px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btn-open {
+    width: 100%;
+  }
+
+  .fact-form {
+    padding: 16px;
+  }
+
+  .fact {
+    padding: 12px 16px;
+  }
+}
